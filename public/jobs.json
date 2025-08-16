@@ -1,0 +1,296 @@
+[
+  {
+    "_id": "001",
+    "title": "Marketing Specialist",
+    "location": "Banani, Dhaka",
+    "jobType": "Remote",
+    "category": "Marketing",
+    "applicationDeadline": "2024-12-15",
+    "salaryRange": {
+      "min": 30000,
+      "max": 50000,
+      "currency": "bdt"
+    },
+    "description": "Join our marketing team to strategize and implement innovative campaigns for our products and services.",
+    "company": "GoDmark Inc.",
+    "requirements": [
+      "Google Analytics",
+      "SEO",
+      "Content Management Systems",
+      "Excel"
+    ],
+    "responsibilities": [
+      "Develop marketing strategies",
+      "Manage ad campaigns",
+      "Analyze campaign performance"
+    ],
+    "status": "active",
+    "hr_email": "recruitment@brightmark.com",
+    "hr_name": "Tasnia Ahmed",
+    "company_logo": "https://i.ibb.co/8ghMWLRh/Instagram-Logo-wine.png"
+  },
+  {
+    "_id": "002",
+    "title": "Frontend Developer",
+    "location": "Mirpur, Dhaka",
+    "jobType": "On-site",
+    "category": "Software Development",
+    "applicationDeadline": "2024-11-30",
+    "salaryRange": {
+      "min": 40000,
+      "max": 60000,
+      "currency": "bdt"
+    },
+    "description": "We are seeking a talented frontend developer to build intuitive user interfaces.",
+    "company": "TechWave Ltd.",
+    "requirements": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "responsibilities": [
+      "Develop and maintain frontend code",
+      "Optimize performance",
+      "Collaborate with backend team"
+    ],
+    "status": "active",
+    "hr_email": "jobs@techwave.com",
+    "hr_name": "Nayeem Islam",
+    "company_logo": "https://i.ibb.co/0yqr0yYQ/images.png"
+  },
+  {
+    "_id": "003",
+    "title": "Graphic Designer",
+    "location": "Gulshan, Dhaka",
+    "jobType": "Hybrid",
+    "category": "Design",
+    "applicationDeadline": "2024-10-20",
+    "salaryRange": {
+      "min": 25000,
+      "max": 40000,
+      "currency": "bdt"
+    },
+    "description": "Creative designer needed to produce engaging visual content for social media and web.",
+    "company": "PixelPro Studio",
+    "requirements": [
+      "Adobe Photoshop",
+      "Illustrator",
+      "Creativity"
+    ],
+    "responsibilities": [
+      "Design visual content",
+      "Collaborate with marketing team",
+      "Maintain brand identity"
+    ],
+    "status": "active",
+    "hr_email": "design@pixelpro.com",
+    "hr_name": "Sadia Zaman",
+    "company_logo": "https://i.ibb.co/215pK2G1/images.jpg"
+  },
+  {
+    "_id": "004",
+    "title": "Data Analyst",
+    "location": "Uttara, Dhaka",
+    "jobType": "Remote",
+    "category": "Data Science",
+    "applicationDeadline": "2025-01-10",
+    "salaryRange": {
+      "min": 50000,
+      "max": 80000,
+      "currency": "bdt"
+    },
+    "description": "Looking for an analyst who can derive insights from complex datasets.",
+    "company": "InsightX Analytics",
+    "requirements": [
+      "Python",
+      "SQL",
+      "Power BI",
+      "Data Visualization"
+    ],
+    "responsibilities": [
+      "Analyze data trends",
+      "Prepare dashboards",
+      "Collaborate with business units"
+    ],
+    "status": "active",
+    "hr_email": "hr@insightx.com",
+    "hr_name": "Mahmud Hasan",
+    "company_logo": "https://i.ibb.co/spBww4fx/images-1.jpg"
+  },
+  {
+    "_id": "005",
+    "title": "HR Executive",
+    "location": "Mohakhali, Dhaka",
+    "jobType": "On-site",
+    "category": "Human Resources",
+    "applicationDeadline": "2024-12-01",
+    "salaryRange": {
+      "min": 28000,
+      "max": 40000,
+      "currency": "bdt"
+    },
+    "description": "Responsible for employee onboarding and handling daily HR operations.",
+    "company": "PeopleFirst Ltd.",
+    "requirements": [
+      "MS Office",
+      "Good Communication",
+      "HR Policies"
+    ],
+    "responsibilities": [
+      "Manage recruitment",
+      "Handle employee records",
+      "Assist in payroll"
+    ],
+    "status": "active",
+    "hr_email": "apply@peoplefirst.com",
+    "hr_name": "Farzana Aktar",
+    "company_logo": "https://i.ibb.co/LW4jkRX/FB-Logo.png"
+  },
+  {
+    "_id": "006",
+    "title": "Content Writer",
+    "location": "Dhanmondi, Dhaka",
+    "jobType": "Remote",
+    "category": "Content",
+    "applicationDeadline": "2024-09-15",
+    "salaryRange": {
+      "min": 20000,
+      "max": 35000,
+      "currency": "bdt"
+    },
+    "description": "Write engaging blog posts, SEO content, and marketing materials.",
+    "company": "WriteRight Agency",
+    "requirements": [
+      "SEO",
+      "English Proficiency",
+      "Creativity"
+    ],
+    "responsibilities": [
+      "Write blog posts",
+      "Optimize content for SEO",
+      "Collaborate with designers"
+    ],
+    "status": "active",
+    "hr_email": "career@writeright.com",
+    "hr_name": "Rafiul Islam",
+    "company_logo": "https://i.ibb.co/qMP6T3F4/Xiaomi-logo-2021-svg.png"
+  },
+  {
+    "_id": "007",
+    "title": "Customer Support Agent",
+    "location": "Baridhara, Dhaka",
+    "jobType": "On-site",
+    "category": "Customer Service",
+    "applicationDeadline": "2024-10-05",
+    "salaryRange": {
+      "min": 22000,
+      "max": 30000,
+      "currency": "bdt"
+    },
+    "description": "Provide exceptional support to our valued customers.",
+    "company": "CareHub Solutions",
+    "requirements": [
+      "Communication Skills",
+      "Problem Solving",
+      "CRM Tools"
+    ],
+    "responsibilities": [
+      "Handle customer queries",
+      "Log tickets",
+      "Follow up on issues"
+    ],
+    "status": "active",
+    "hr_email": "support@carehub.com",
+    "hr_name": "Sharmin Sultana",
+    "company_logo": "https://i.ibb.co/wNzJt7fb/oppo-brand-logo-phone-symbol-white-design-vector-46231740.jpg"
+  },
+  {
+    "_id": "008",
+    "title": "Backend Developer",
+    "location": "Rampura, Dhaka",
+    "jobType": "Hybrid",
+    "category": "Software Development",
+    "applicationDeadline": "2024-12-31",
+    "salaryRange": {
+      "min": 55000,
+      "max": 90000,
+      "currency": "bdt"
+    },
+    "description": "Build robust backend systems and APIs.",
+    "company": "CodeNest",
+    "requirements": [
+      "Node.js",
+      "MongoDB",
+      "REST APIs",
+      "Git"
+    ],
+    "responsibilities": [
+      "Develop backend logic",
+      "Integrate APIs",
+      "Maintain servers"
+    ],
+    "status": "active",
+    "hr_email": "jobs@codenest.com",
+    "hr_name": "Ashfaq Rahman",
+    "company_logo": "https://i.ibb.co/twjHf63P/X-mark-svg.png"
+  },
+  {
+    "_id": "009",
+    "title": "Social Media Manager",
+    "location": "Banani, Dhaka",
+    "jobType": "Remote",
+    "category": "Marketing",
+    "applicationDeadline": "2024-11-01",
+    "salaryRange": {
+      "min": 35000,
+      "max": 50000,
+      "currency": "bdt"
+    },
+    "description": "Manage all social platforms and engage with our community.",
+    "company": "BuzzMedia",
+    "requirements": [
+      "Facebook Ads",
+      "Instagram",
+      "Content Creation"
+    ],
+    "responsibilities": [
+      "Plan campaigns",
+      "Engage followers",
+      "Analyze performance"
+    ],
+    "status": "active",
+    "hr_email": "social@buzzmedia.com",
+    "hr_name": "Mushfiqur Rahman",
+    "company_logo": "https://i.ibb.co/Q3nzvv0y/images-1.png"
+  },
+  {
+    "_id": "010",
+    "title": "QA Engineer",
+    "location": "Mohammadpur, Dhaka",
+    "jobType": "On-site",
+    "category": "Quality Assurance",
+    "applicationDeadline": "2024-11-15",
+    "salaryRange": {
+      "min": 40000,
+      "max": 60000,
+      "currency": "bdt"
+    },
+    "description": "Test software applications and ensure bug-free releases.",
+    "company": "TestLab Ltd.",
+    "requirements": [
+      "Manual Testing",
+      "Automation Tools",
+      "Bug Tracking"
+    ],
+    "responsibilities": [
+      "Write test cases",
+      "Perform QA tests",
+      "Report bugs"
+    ],
+    "status": "active",
+    "hr_email": "qa@testlab.com",
+    "hr_name": "Nazifa Nawar",
+    "company_logo": "https://i.ibb.co/KxQCdSSY/Microsoft-logo-svg.png"
+  }
+]
