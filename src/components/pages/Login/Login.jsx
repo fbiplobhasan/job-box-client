@@ -3,11 +3,14 @@ import React, { useContext } from "react";
 import lottieData from "../../../assets/Lottie/Login.json";
 
 import AuthContext from "../../../context/AuthContext/AuthContex";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../../shared/SocialLogin";
 
 const Login = () => {
   const { loginUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state || "/";
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -19,6 +22,7 @@ const Login = () => {
     loginUser(email, password)
       .then((result) => {
         console.log(result.user);
+        navigate(from);
       })
       .catch((error) => {
         console.log(error.message);
