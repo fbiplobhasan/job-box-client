@@ -9,7 +9,7 @@ import {
   signOut,
 } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
-
+import axios from "axios";
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -29,20 +29,36 @@ const AuthProvider = ({ children }) => {
 
   const logInWithGoogle = () => {
     setLoading(true);
-    return signInWithPopup(auth,googleProvider);
-  }
+    return signInWithPopup(auth, googleProvider);
+  };
 
   const logOutUser = () => {
     setLoading(true);
     return signOut(auth);
   };
 
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-      console.log("state captured", currentUser);
-      setLoading(false);
+      console.log("state captured", currentUser?.email);
+
+      if (currentUser?.email) {
+        const user = { email: currentUser.email };
+
+        axios
+          .post("https://https://job-box-server-orcin.vercel.app/jwt", user, { withCredentials: true })
+          .then((res) => {
+            console.log("login with token", res.data);
+            setLoading(false);
+          });
+      } else {
+        axios
+          .post("https://https://job-box-server-orcin.vercel.app/logout", {}, { withCredentials: true })
+          .then((res) => {
+            console.log("logout", res.data);
+            setLoading(false);
+          });
+      }
     });
     return () => {
       unsubscribe();
@@ -55,7 +71,6 @@ const AuthProvider = ({ children }) => {
     loginUser,
     logOutUser,
     logInWithGoogle,
-
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

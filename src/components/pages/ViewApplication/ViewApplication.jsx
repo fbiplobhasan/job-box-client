@@ -10,7 +10,7 @@ const ViewApplication = () => {
     const data = {
       status: e.target.value,
     };
-    fetch(`http://localhost:3000/job-applications/${id}`, {
+    fetch(`https://https://job-box-server-orcin.vercel.app/job-applications/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

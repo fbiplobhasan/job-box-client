@@ -1,15 +1,33 @@
 import React, { useEffect, useState } from "react";
 import UseAuth from "../../../hooks/UseAuth/UseAuth";
+import axios from "axios";
+import useAxiosSecure from "./../../../hooks/useAxiosSecure/useAxiosSecure";
 
 const MyApplication = () => {
   const { user } = UseAuth();
   const [jobs, setJobs] = useState([]);
+  const axiosSecure = useAxiosSecure();
   useEffect(() => {
-    fetch(`http://localhost:3000/job-application?email=${user.email}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setJobs(data);
-      });
+    // fetch(`https://https://job-box-server-orcin.vercel.app/job-application?email=${user.email}`)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setJobs(data);
+    //   });
+    // axios.get(`https://https://job-box-server-orcin.vercel.app/job-application?email=${user.email}`, {
+    //     withCredentials: true,
+    //   })
+    //   .then((res) => {
+    //     setJobs(res.data);
+    //     console.log(res.data);
+    //   });
+
+    axiosSecure
+      .get(`/job-application?email=${user.email}`)
+      .then((res) => {
+        console.log("sever response:", res.data);
+        setJobs(res.data);
+      })
+      .catch((err) => console.log(err));
   }, [user.email]);
   return (
     <div>

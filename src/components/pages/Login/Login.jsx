@@ -5,6 +5,7 @@ import lottieData from "../../../assets/Lottie/Login.json";
 import AuthContext from "../../../context/AuthContext/AuthContex";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../../shared/SocialLogin";
+import axios from "axios";
 
 const Login = () => {
   const { loginUser } = useContext(AuthContext);
@@ -21,7 +22,12 @@ const Login = () => {
 
     loginUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        console.log("sign in", result.user.email);
+        const user = { email: email };
+        axios.post("https://https://job-box-server-orcin.vercel.app/jwt", user,{withCredentials:true})
+        .then((res) => {
+          console.log(res.data);
+        });
         navigate(from);
       })
       .catch((error) => {
@@ -31,7 +37,7 @@ const Login = () => {
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left w-2/4">
+        <div className="text-center lg:text-left w-2/5">
           <Lottie animationData={lottieData}></Lottie>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
