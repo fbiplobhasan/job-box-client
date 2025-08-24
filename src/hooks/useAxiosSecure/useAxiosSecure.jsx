@@ -3,7 +3,7 @@ import UseAuth from "../UseAuth/UseAuth";
 import { useNavigate } from "react-router-dom";
 
 const axiosInstance = axios.create({
-  baseURL: "https://https://job-box-server-orcin.vercel.app",
+  baseURL: "http://localhost:3000",
   withCredentials: true,
 });
 

@@ -8,12 +8,12 @@ const MyApplication = () => {
   const [jobs, setJobs] = useState([]);
   const axiosSecure = useAxiosSecure();
   useEffect(() => {
-    // fetch(`https://https://job-box-server-orcin.vercel.app/job-application?email=${user.email}`)
+    // fetch(`http://localhost:3000/job-application?email=${user.email}`)
     //   .then((res) => res.json())
     //   .then((data) => {
     //     setJobs(data);
     //   });
-    // axios.get(`https://https://job-box-server-orcin.vercel.app/job-application?email=${user.email}`, {
+    // axios.get(`http://localhost:3000/job-application?email=${user.email}`, {
     //     withCredentials: true,
     //   })
     //   .then((res) => {

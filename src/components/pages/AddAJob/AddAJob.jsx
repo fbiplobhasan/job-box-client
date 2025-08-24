@@ -14,12 +14,12 @@ const AddAJob = () => {
     console.log(initialData);
     const { min, max, currency, ...newJob } = initialData;
     console.log(newJob);
-    newJob.salaryRange = { min, max, currency };
+    newJob.salaryRange = { min: parseInt(min), max: parseInt(max), currency };
     newJob.requirements = newJob.requirements.split("\n");
     newJob.responsibilities = newJob.responsibilities.split("\n");
     console.log(newJob);
 
-    fetch("https://https://job-box-server-orcin.vercel.app/jobs", {
+    fetch("http://localhost:3000/jobs", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -165,6 +165,7 @@ const AddAJob = () => {
             type="email"
             name="hr_email"
             defaultValue={user?.email}
+            readOnly
             placeholder="HR Email"
             className="input input-bordered w-full"
             required

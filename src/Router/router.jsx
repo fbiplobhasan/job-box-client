@@ -10,6 +10,7 @@ import MyApplication from "../components/pages/MyApplication/MyApplication";
 import AddAJob from "../components/pages/AddAJob/AddAJob";
 import MyPostedJobs from "../components/pages/MyPostedJobs/MyPostedJobs";
 import ViewApplication from "../components/pages/ViewApplication/ViewApplication";
+import AllJob from './../components/pages/AllJob/AllJob';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/jobs",
+        element: <AllJob></AllJob>,
       },
       {
         path: "/jobs/:id",

@@ -24,7 +24,7 @@ const JobApply = () => {
       github,
       resume,
     };
-    fetch("https://https://job-box-server-orcin.vercel.app/job-application", {
+    fetch("http://localhost:3000/job-application", {
       method: "POST",
       headers: {
         "content-type": "application/json",

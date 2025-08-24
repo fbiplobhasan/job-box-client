@@ -46,14 +46,14 @@ const AuthProvider = ({ children }) => {
         const user = { email: currentUser.email };
 
         axios
-          .post("https://https://job-box-server-orcin.vercel.app/jwt", user, { withCredentials: true })
+          .post("http://localhost:3000/jwt", user, { withCredentials: true })
           .then((res) => {
             console.log("login with token", res.data);
             setLoading(false);
           });
       } else {
         axios
-          .post("https://https://job-box-server-orcin.vercel.app/logout", {}, { withCredentials: true })
+          .post("http://localhost:3000/logout", {}, { withCredentials: true })
           .then((res) => {
             console.log("logout", res.data);
             setLoading(false);

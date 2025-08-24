@@ -24,7 +24,7 @@ const Login = () => {
       .then((result) => {
         console.log("sign in", result.user.email);
         const user = { email: email };
-        axios.post("https://https://job-box-server-orcin.vercel.app/jwt", user,{withCredentials:true})
+        axios.post("http://localhost:3000/jwt", user,{withCredentials:true})
         .then((res) => {
           console.log(res.data);
         });
